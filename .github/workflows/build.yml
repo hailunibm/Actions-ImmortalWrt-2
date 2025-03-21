@@ -119,7 +119,7 @@ jobs:
       - name: 添加用户feeds & clash-core(Add feeds & clash-core)
         run: |
           cp -f feeds.conf.default preset-clash-core-amd64.sh ImmortalWrt/
-          cd ImmortalWrt && preset-clash-core-amd64.sh
+          cd ImmortalWrt && chmod +x preset-clash-core-amd64.sh && preset-clash-core-amd64.sh
         
 #      # 你也可以使用这个，个人觉得它更好用 (You can use this, I personally think it is better)
       - name: 开启 SSH 服务 (Start SSH service)
