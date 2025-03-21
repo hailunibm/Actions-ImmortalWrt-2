@@ -2,3 +2,6 @@
 # Please enter the custom command below (usually used to install third-party plugins) (can be left blank)
 # git clone --depth=1 https://github.com/EOYOHOO/UA2F.git package/UA2F
 # git clone --depth=1 https://github.com/EOYOHOO/rkp-ipid.git package/rkp-ipid
+cd ImmortalWrt
+echo "src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main" >> "feeds.conf.default"
+chmod +x $GITHUB_WORKSPACE/$ADD_FEED_SH && $GITHUB_WORKSPACE/$ADD_FEED_SH
